@@ -1,0 +1,202 @@
+img {
+  position: absolute;
+}
+
+.blend p { 
+  font-size: 100px;
+  mix-blend-mode: hard-light;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #203a27;
+}
+
+a:visited {
+  color: #203a27;
+}
+.blend {
+  width: 100vw;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #203a27;
+  text-shadow: 0 0 5px #203a27, 0 0 10px #203a27, 0 0 15px #333333, 0 0 20px #333333, 0 0 35px #333333, 0 0 40px #333333, 0 0 50px #333333, 0 0 75px #333333;
+}
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+body {
+  margin: 0;
+  display: block;
+  justify-content: space-between;
+  align-items: normal;
+  width: 100vw;
+  height: 270px;
+  overflow-x: hidden; overflow-y: scroll;
+}
+#pText {
+  font-family: 'Amatic+SC', cursive;
+  font-size: 3em;
+  line-height: 1.4;
+}
+#pText span { 
+  display: inline-block;
+}
+#pText:hover span { 
+  animation: bounce .6s; 
+}
+@keyframes bounce {
+  0%, 100% { 
+    transform: translate(0); 
+  }
+  25% { 
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(3deg) scale(1.1);  
+  }
+}
+span:nth-child(4n) { 
+  color: #203a27; 
+  text-shadow: 1px 1px #203a27, 2px 2px #203a27, 3px 3px  #203a27, 4px 4px #203a27; 
+}
+span:nth-child(4n-1) { 
+  color: #203a27; 
+  text-shadow: 1px 1px #203a27, 2px 2px #203a27, 3px 3px #203a27, 4px 4px #203a27; 
+}
+span:nth-child(4n-2) { 
+  color: #203a27; 
+  text-shadow: 1px 1px #203a27, 2px 2px #203a27, 3px 3px #203a27, 4px 4px #203a27; 
+}
+span:nth-child(4n-3) { 
+  color:#203a27; 
+  text-shadow: 1px 1px #203a27, 2px 2px #203a27, 3px 3px #203a27, 4px 4px #203a27; 
+}
+#pText span:nth-child(2){ animation-delay:0.05s; }
+#pText span:nth-child(3){ animation-delay:0.1s; }
+#pText span:nth-child(4){ animation-delay:0.15s; }
+#pText span:nth-child(5){ animation-delay:0.2s; }
+#pText span:nth-child(6){ animation-delay:0.25s; }
+#pText span:nth-child(7){ animation-delay:0.3s; }
+#pText span:nth-child(8){ animation-delay:0.35s; }
+#pText span:nth-child(9){ animation-delay:0.4s; }
+#pText span:nth-child(10){ animation-delay:0.45s; }
+#pText span:nth-child(11){ animation-delay:0.5s; }
+#pText span:nth-child(12){ animation-delay:0.55s; }
+#pText span:nth-child(13){ animation-delay:0.6s; }
+#pText span:nth-child(14){ animation-delay:0.65s; }
+#pText span:nth-child(15){ animation-delay:0.7s; }
+#pText span:nth-child(16){ animation-delay:0.75s; }
+#pText span:nth-child(17){ animation-delay:0.8s; }
+#pText span:nth-child(18){ animation-delay:0.85s; }
+#pText span:nth-child(19){ animation-delay:0.9s; }
+#pText span:nth-child(20){ animation-delay:0.95s; }
+#pText span:nth-child(21){ animation-delay:1.00s; }
+#pText span:nth-child(22){ animation-delay:1.05s; }
+#pText span:nth-child(23){ animation-delay:1.10s; }
+#pText span:nth-child(24){ animation-delay:1.15s; }
+#pText span:nth-child(25){ animation-delay:1.20s; }
+#pText span:nth-child(26){ animation-delay:1.25s; }
+#pText span:nth-child(27){ animation-delay:1.30s; }
+#pText span:nth-child(28){ animation-delay:1.35s; }
+#pText span:nth-child(29){ animation-delay:1.40s; }
+#pText span:nth-child(30){ animation-delay:1.45s; }
+#pText span:nth-child(31){ animation-delay:1.50s; }
+#pText span:nth-child(32){ animation-delay:1.55s; }
+#pText span:nth-child(33){ animation-delay:1.60s; }
+#pText span:nth-child(34){ animation-delay:1.65s; }
+#pText span:nth-child(35){ animation-delay:1.70s; }
+#pText span:nth-child(36){ animation-delay:1.75s; }
+#pText span:nth-child(37){ animation-delay:1.80s; }
+#pText span:nth-child(38){ animation-delay:1.85s; }
+#pText span:nth-child(39){ animation-delay:1.90s; }
+#pText span:nth-child(40){ animation-delay:1.95s; }
+#pText span:nth-child(41){ animation-delay:2.00s; }
+#pText span:nth-child(42){ animation-delay:2.05s; }
+#pText span:nth-child(43){ animation-delay:2.10s; }
+
+
+
+
+th, td {
+  padding: 10px 15px;
+  border: 2px solid grey;
+  width: 100px;
+  height: 100px;
+  color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #00382b;
+}
+
+
+
+.table {
+  border-collapse: separate;
+  border-spacing: 10px 20px;
+  background-image:url(../assets/bebebobo.jpg);
+  background-size:100%;
+  position: absolute;
+  border-radius: 7px;
+  left: 350px;
+  top: 500px;
+  border: 3px solid grey;
+  box-shadow: 1px 1px 10px #00382b;
+}
+
+
+body{
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image:url(../assets/shit2.jpg);
+  
+
+}
+table th:hover{
+  animation: bobo 1s forwards;
+  transform: scale(1.2);
+}
+@keyframes bobo{
+  20%{ box-shadow: 100px 100px 100px 100px rgba(158, 173, 184, 0.68) inset;
+  }
+  40%{box-shadow: 100px 100px 100px 100px rgba(118, 128, 134, 0.68) inset;}
+  60%{box-shadow: 100px 100px 100px 100px rgba(128, 151, 168, 0.68) inset;}
+  80%{box-shadow: 100px 100px 100px 100px rgba(164, 193, 214, 0.68) inset;}
+  100%{box-shadow: 100px 100px 100px 100px rgba(170, 215, 247, 0.68) inset;}
+}
+table td:hover{
+  animation: bobo 1s forwards;
+  transform: scale(1.2);
+
+}
+@keyframes bobo{
+  20%{ box-shadow: 100px 100px 100px 100px rgba(158, 173, 184, 0.68) inset;
+  }
+  40%{box-shadow: 100px 100px 100px 100px rgba(118, 128, 134, 0.68) inset;}
+  60%{box-shadow: 100px 100px 100px 100px rgba(128, 151, 168, 0.68) inset;}
+  80%{box-shadow: 100px 100px 100px 100px rgba(164, 193, 214, 0.68) inset;}
+  100%{box-shadow: 100px 100px 100px 100px rgba(170, 215, 247, 0.68) inset;}
+}
+ 
+#footer .icons {
+  color: #aaaaaa;
+}
+
+#footer .copyright {
+  color: #aaaaaa;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+body.single #footer {
+  text-align: center;
+}
+  
