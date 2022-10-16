@@ -1,25 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel = "stylesheet" type="text/css" href = "lib/css/stylee.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ГРАМИЛЬ КОРП!!!</title>
+ </head>
+ <body>
+</body>
+</html>
 <?php
-if(isset($_POST["firstname"]) && isset($_POST["eduform"]) && 
-isset($_POST["comment"]) && isset($_POST["courses"])) 
+if(isset($_POST["firstname"]) && isset($_POST["otnos"]) && 
+isset($_POST["comment"]) && isset($_POST["music"])) 
 {
 $name = htmlentities($_POST["firstname"]);
-$eduform = htmlentities($_POST["eduform"]);
-$hostel = "нет";
-if(isset($_POST["hostel"])) $hostel = "да";
+$sex = htmlentities($_POST["sex"]);
+$otnos = "Хорошо";
+if(isset($_POST[""])) $hostel = "Плохо";
 $comment = htmlentities($_POST["comment"]);
-$courses = $_POST["courses"];
+$music = $_POST["music"];
 $output ="
 <html>
 <head>
-<title>Анкетные данные</title>
+<title>Данные</title>
 </head>
 <body>
 Вас зовут: $name<br />
-Форма обучения: $eduform<br />
-Требуется общежитие: $hostel<br />
-Выбранные курсы:
+Ваш пол: $sex<br />
+Ваше отношение к: $otnos<br />
+Ваш музыкальный вкус:
 <ul>";
-foreach($courses as $item)
+foreach($music as $item)
 $output.="<li>" . htmlentities($item) . "</li>";
 $output.="</ul></body></html>";
 echo $output;

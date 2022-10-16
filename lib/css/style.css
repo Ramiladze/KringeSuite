@@ -1,12 +1,3 @@
-img {
-  position: absolute;
-}
-
-.blend p { 
-  font-size: 100px;
-  mix-blend-mode: hard-light;
-}
-
 a {
   outline: none;
   text-decoration: none;
@@ -32,9 +23,7 @@ a:visited {
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 body {
   margin: 0;
-  display: block;
   justify-content: space-between;
-  align-items: normal;
   width: 100vw;
   height: 270px;
   overflow-x: hidden; overflow-y: scroll;
@@ -142,7 +131,7 @@ th, td {
   background-size:100%;
   position: absolute;
   border-radius: 7px;
-  left: 350px;
+  left: 670px;
   top: 500px;
   border: 3px solid grey;
   box-shadow: 1px 1px 10px #00382b;
@@ -151,7 +140,7 @@ th, td {
 
 body{
   
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
   background-image:url(../assets/shit2.jpg);
   
@@ -182,21 +171,64 @@ table td:hover{
   80%{box-shadow: 100px 100px 100px 100px rgba(164, 193, 214, 0.68) inset;}
   100%{box-shadow: 100px 100px 100px 100px rgba(170, 215, 247, 0.68) inset;}
 }
- 
-#footer .icons {
-  color: #aaaaaa;
+
+   .blat img{
+    padding: 10px 15px;
+    position:absolute;
+    float: right; /* Выстраиваем элементы по горизонтали */
+    left:1300px;
+    height: 453px;
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)); 
+    background-size: cover;
+  }
+  .bla img {
+	padding: 10px 15px;    
+	height: 453px;    
+	position: absolute;
+    float: left; /* Выстраиваем элементы по горизонтали */
+    right:1300px;
+    height: 453px;  
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
+	opacity: 0.8;
 }
 
-#footer .copyright {
-  color: #aaaaaa;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 0.5em;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
+.gradient {
+	display: inline-block;
+	position: relative;  
+    height: 350px; 
+    left: 650px;
+    top: 600px;
 }
-
-body.single #footer {
-  text-align: center;
+.gradient:after {
+	content: "";
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
-  
+.gradient:hover:after {
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to left, #2c302e, #686c70); 
+	opacity: 0.8;
+}
+.gradient:before {
+	content: "";
+	opacity: 0;    
+	transition: opacity 0.5s;
+}
+.gradient:hover:before {
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	margin: -26px 0 0 -26px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;    
+	z-index: 100;    
+	background: url(../assets/о.png) 0 0 no-repeat;
+	opacity: 1;
+}

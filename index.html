@@ -1,12 +1,33 @@
 <html>
- <head>
- <link rel = "stylesheet" type="text/css" href = "lib/css/stylee.css">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="lib/css/jj.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>ГРАМИЛЬ КОРП!!!</title>
- </head>
+  <title>different</title>
+</head>
+
  <body>
 </body>
 </html>
-<h1>
-    Вторая страница
-  </h1>
+<h1>Здарова! Заполни форму пожалуйста</h1>
+  <form action="input.php" method="POST">
+  <p>Имя<br> 
+  <input type="text" name="firstname" /></p>
+  <p>Пол<br> 
+  <input type="radio" name="sex" value="Мужской" />Мужской <br>
+  <input type="radio" name="sex" value="Женский" />Женский </p>
+  <p>Как вы относитесь к :<br>
+  <input type="radio" name="otnos" />Хорошо
+  <input type="radio" name="otnos" />Плохо</p>
+  <p>Какую музыку вы слушаете?: <br>
+  <select name="music[]" size="5" multiple="multiple">
+      <option value="Металкор">Металкор</option>
+      <option value="Рок">Рок</option>
+      <option value="Пост-хардкор">Пост-хардкор</option>
+      <option value="Грайдкор">Грайдкор</option>
+      <option value="Альтернатива">Альтернатива</option>
+  </select></p>
+  <p>Комментарий: <br>
+  <textarea name="comment" maxlength="200"></textarea></p>
+  <input type="submit" value="Отправить">
+  </form>
